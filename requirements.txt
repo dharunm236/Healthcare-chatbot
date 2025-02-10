@@ -1,0 +1,9 @@
+streamlit
+transformers
+tensorflow
+torch
+tf-keras
+nltk
+dateparser
+icalendar
+accelerate==1.3.0
