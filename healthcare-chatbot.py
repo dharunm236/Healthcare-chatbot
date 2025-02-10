@@ -19,7 +19,7 @@ def authenticate_huggingface():
             if st.button("Login"):
                 try:
                     if hf_token == "use_default_token":
-                        hf_token = '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'
+                        hf_token = 'token' #replace with your token
                     login(token=hf_token)
                     st.session_state.hf_token = hf_token
                     st.success("Successfully logged in to Hugging Face!")
