@@ -89,7 +89,7 @@ The chatbot is powered by **Bio-Medical Llama-3-2-1B-CoT-012025**, a transformer
 For any queries, feel free to reach out:  
 📧 Email: dharunm236@gmail.com
 
-
+_Disclaimer: This medical chatbot provides information for reference purposes only and is not a substitute for professional medical advice._
 
 _Enjoy using the HealthCare Assistant! Stay healthy! 💙_
 
