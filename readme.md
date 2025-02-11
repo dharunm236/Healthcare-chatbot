@@ -1,82 +1,99 @@
-# 🏥 Healthcare AI Chatbot
+# HealthCare Assistant Chatbot
 
-![Healthcare Chatbot](https://your-image-url.com)  
-A smart AI-powered chatbot for medical assistance, built using **Hugging Face models** and integrated with an appointment booking system.
+  
+*A Medical Chatbot powered by Hugging Face Transformers*
 
----
-## 🚀 Features
-- 🏥 **Medical Chatbot** - Provides AI-generated medical responses.
-- 📅 **Appointment Booking** - Schedule consultations seamlessly.
-- 🔐 **Hugging Face Authentication** - Secure access using Hugging Face tokens.
-- 💾 **Persistent Chat Sessions** - Continue conversations without losing context.
-- 📅 **Calendar Integration** - Add confirmed appointments to your calendar.
+## 🌟 Overview
+The **HealthCare Assistant Chatbot** is an AI-powered chatbot designed to assist users with medical queries, symptoms, and doctor appointments. It leverages a state-of-the-art **biomedical language model** to generate informative responses and even allows **appointment scheduling** with calendar integration.
 
 ---
-## 🛠️ Technologies Used
-- **Python** 🐍 (FastAPI / Flask)
-- **Hugging Face Transformers** 🤗
-- **React.js** ⚛️ (For Frontend UI)
-- **MongoDB / Firebase** 🗄️ (For storing appointments & chat history)
-- **Docker** 🐳 (Optional for containerization)
+## ✨ Features
+
+✔️ **AI-Powered Medical Assistance** – Provides healthcare-related information using a **Bio-Medical Llama-3-2-1B-CoT-012025** model.  
+✔️ **Hugging Face Authentication** – Secure login to access the AI model.  
+✔️ **Natural Language Understanding** – Recognizes user queries and provides relevant answers.  
+✔️ **Appointment Booking** – Users can schedule, confirm, or cancel doctor appointments.  
+✔️ **.ICS Calendar Integration** – Exports scheduled appointments to calendar (.ics file).  
+✔️ **Chat History** – Maintain multiple chat sessions for a seamless experience.  
+✔️ **User-Friendly UI** – Built with **Streamlit** for an intuitive user interface.  
 
 ---
-## 📥 Installation & Setup
+## 🚀 Installation & Setup
+
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+$ git clone https://github.com/your-repo/healthcare-chatbot.git
+$ cd healthcare-chatbot
 ```
 
-### 2️⃣ Install Dependencies
+### 2️⃣ Create a Virtual Environment (Optional but Recommended)
 ```bash
-pip install -r requirements.txt  # Install backend dependencies
-cd frontend && npm install  # Install frontend dependencies
+$ python -m venv venv
+$ source venv/bin/activate  # On Windows use: venv\Scripts\activate
 ```
 
-### 3️⃣ Get Hugging Face Token
-This project uses a **gated model**, requiring a Hugging Face access token:
-1. Go to [Hugging Face](https://huggingface.co/)
-2. Sign in or create an account
-3. Navigate to [Access Tokens](https://huggingface.co/settings/tokens)
-4. Generate a **new token** (with `read` permissions)
-5. Copy and paste the token when prompted in the app
-
-### 4️⃣ Run the Backend Server
+### 3️⃣ Install Dependencies
 ```bash
-python app.py  # Runs the chatbot backend
+$ pip install -r requirements.txt
 ```
 
-### 5️⃣ Start the Frontend
+### 4️⃣ Get a Hugging Face Token
+1. Go to **[Hugging Face](https://huggingface.co/join)** and sign up.
+2. Navigate to **Settings → Access Tokens**.
+3. Generate a **new token** with `read` access.
+4. Use this token when prompted in the chatbot.
+
+### 5️⃣ Run the Chatbot
 ```bash
-cd frontend
-npm start
+$ streamlit run app.py
 ```
-Now, open `http://localhost:3000` to use the chatbot! 🎉
 
 ---
-## 🎯 Usage
-1. **Authenticate** using your Hugging Face token.
-2. **Chat** with the AI for medical-related queries.
-3. **Book an appointment** if needed.
-4. **Add to calendar** (optional).
+## 🏥 How It Works
+
+### ✅ Authentication
+Users need to enter their **Hugging Face Token** to access the AI model. Once logged in, they can chat with the assistant.
+
+### 💬 Chat Functionality
+- Users can ask **medical-related queries** and receive AI-generated responses.
+- The chatbot understands **natural language inputs** and gives **context-aware replies**.
+- It provides **doctor recommendations** based on symptoms.
+
+### 📅 Appointment Booking
+- Users can **schedule an appointment** by providing:
+  - Doctor’s name
+  - Preferred date and time
+  - Confirmation of booking
+- Appointments can be exported to a **.ICS calendar file** for reminders.
+
+### 🛠️ Model Used
+The chatbot is powered by **Bio-Medical Llama-3-2-1B-CoT-012025**, a transformer model fine-tuned for medical and biomedical NLP tasks.
 
 ---
-## 📌 Future Enhancements
-- 🔍 **Improve NLP models** for better accuracy.
-- 📊 **Advanced analytics** for medical consultations.
-- 🤝 **Integration with real-time doctor support.**
+## 📸 Screenshots
+> Below are some screenshots of the chatbot UI, authentication, chat history, and appointment booking:
+
+![Hugging face Login Page](Resources/token_login.png)
+![Chat Interface](Resources/Chat.png)
+![Appointment Scheduling](Resources/Appointment.png)
 
 ---
-## 🤝 Contributing
-Contributions are welcome! Feel free to submit a pull request.
+## 📌 Technologies Used
+- **Streamlit** – For building the web UI.
+- **Transformers (Hugging Face)** – For AI-powered responses.
+- **Dateparser & iCalendar** – For appointment scheduling and calendar export.
+- **PyTorch** – For optimized model inference.
+
+---
+## 📬 Contact
+For any queries, feel free to reach out:  
+📧 Email: dharunm236@gmail.com
 
 ---
 ## 📜 License
-This project is licensed under the MIT License.
+This project is licensed under the **MIT License**.
 
 ---
-## 📞 Contact
-For any queries, reach out via [your-email@example.com](mailto:your-email@example.com) or open an issue.
 
----
-⭐ **If you find this project helpful, consider giving it a star!** ⭐
+_Enjoy using the HealthCare Assistant! Stay healthy! 💙_
+
